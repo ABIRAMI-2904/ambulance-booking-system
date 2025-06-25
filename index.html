@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RapidRescue</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">RapidRescue</div>
+    <nav class="nav-links">
+      <a href="#index.html">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="admin.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <h1>Every Second Counts. Get Medical Help Fast!</h1>
+        <p>
+          Book your ambulance in just a few clicks – we’re here<br>
+          24/7 to bring care to your doorstep.
+        </p>
+        <a href="#hire" class="btn">Hire an Ambulance</a>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+  <div class="about-overlay">
+    <h2>About Us</h2>
+    <p>
+      At RapidRescue, we believe that in times of medical emergencies, every second matters. Our mission is to provide fast, reliable, and life-saving ambulance services to those in urgent need — anytime, anywhere.<br><br>
+      With a network of trained medical staff, well-equipped ambulances, and real-time booking capabilities, RapidRescue is designed to ensure that help reaches your doorstep without delay. Whether it’s a minor medical situation or a critical emergency, we’re committed to delivering compassionate care with rapid response.<br><br>
+      We operate 24/7, because emergencies don’t follow a schedule. Backed by technology and driven by a purpose, RapidRescue stands by your side when it matters most.
+    </p>
+  </div>
+</section>
+<section class="why-choose">
+  <h2>Why Choose us?</h2>
+  <div class="features">
+    <div class="feature-box">
+      <img src="svg-repo/dispatch.svg" alt="Quick Dispatch">
+      <p>Quick ambulance dispatch</p>
+    </div>
+    <div class="feature-box">
+      <img src="svg-repo/availability.svg" alt="24/7 Availability">
+      <p>24/7 Availability</p>
+    </div>
+    <div class="feature-box">
+      <img src="svg-repo/staff.svg" alt="Trained Medical Staff">
+      <p>Trained medical staff</p>
+    </div>
+    <div class="feature-box">
+      <img src="images/types.png" alt="Multiple Ambulance Types">
+      <p>Multiple ambulance types</p>
+    </div>
+  </div>
+</section><section class="hire-form" id="hire">
+  <h2>Hire An Ambulance</h2>
+  <form action="submit_booking.php" method="POST">
+    <div class="form-row">
+      <input type="text" name="patient_name" placeholder="Enter Patient Name">
+      <select name="gender">
+        <option disabled selected>Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+      <input type="number" name="age" placeholder="Age">
+      <input type="text" name="dob" placeholder="Date of Birth (DD-MM-YYYY)" onfocus="(this.type='date')">
+    </div>
+
+    <div class="form-row">
+      <select name="emergency_type">
+        <option disabled selected>Medical Emergency Type</option>
+        <option>Accident</option>
+        <option>Cardiac Arrest</option>
+        <option>Pregnancy</option>
+        <option>Other</option>
+      </select>
+      <input type="text" name="relative_name" placeholder="Relative Name">
+      <input type="text" name="relationship" placeholder="Relationship With Patient">
+    </div>
+
+    <div class="form-row">
+      <input type="text" name="contact_number" placeholder="Contact Number">
+      <select name="ambulance_type">
+        <option disabled selected>Preffered Ambulance Type</option>
+        <option>Basic Life Support</option>
+        <option>Advanced Life Support</option>
+        <option>ICU Ambulance</option>
+        <option>Wheelchair Ambulance</option>
+      </select>
+      <input type="text" name="pickup_date" placeholder="Pickup Date(DD-MM-YYYY)" onfocus="(this.type='date')">
+      <input type="time" name="pickup_time" placeholder="Pickup Time">
+    </div>
+
+    <div class="form-row single">
+      <input type="text" name="pickup_location" placeholder="Pickup Location">
+    </div>
+
+    <div class="form-row single">
+      <select name="drop_location">
+        <option disabled selected>Drop Location</option>
+        <option>Apollo Hospital, Greams Road</option>
+        <option>MIOT International</option>
+        <option>Fortis Malar Hospital</option>
+        <option>Global Hospitals, Perumbakkam</option>
+        <option>Kauvery Hospital</option>
+        <option>Billroth Hospitals</option>
+        <option>Stanley Medical College</option>
+        <option>Government General Hospital</option>
+      </select>
+    </div>
+
+    <div class="submit-row">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</section>
+
+<section class="contact-section-full" id="contact">
+  <h2 class="contact-title">Contact Us</h2>
+  <div class="contact-container-full">
+    <div class="contact-image">
+      <!-- Add your image here -->
+      <img src="images/customer.png" alt="Hospital Staff" />
+    </div>
+    <div class="contact-info">
+      <p class="contact-heading">Have Questions or<br>Need Help? We’re Just<br>a Call Away.</p>
+
+      <div class="contact-detail">
+        <img src="svg-repo/call-phone-svgrepo-com.svg" alt="Phone Icon" class="icon" />
+        <span>044 2456 7890</span>
+      </div>
+
+      <div class="contact-detail">
+        <img src="svg-repo/gmail-icon-logo-svgrepo-com.svg" alt="Gmail Icon" class="icon" />
+        <span>rapidrescue@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2025 RapidRescue. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d4f0ff; /* Light blue base */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.background-circle {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: url('adminlogin.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Frosted Glass Login Card */
+.login-box {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.login-box h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3e1c1c; /* Deep brown */
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Submit button */
+.login-box button {
+  background-color: #e0a800;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #c79100;
+}

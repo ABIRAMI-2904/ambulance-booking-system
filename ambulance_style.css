@@ -1,0 +1,60 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0; /* Remove padding that pushes image up */
+  min-height: 100vh; /* Ensure full viewport height */
+  background-color: #fff;
+  background-image: url('available.png');
+  background-repeat: no-repeat;
+  background-size: contain; /* Keeps full image visible */
+  background-position: bottom center; /* Places image at the bottom */
+}
+
+
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+h1 {
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #d32f2f;
+}
+
+.table-container {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+thead {
+  background-color: #f9cd5b;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}
